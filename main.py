@@ -1,5 +1,7 @@
-<details>
-<summary>Click to show code</summary>
+import requests
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+import os
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 HF_TOKEN = os.getenv("HF_TOKEN")
@@ -80,5 +82,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-</details>
